@@ -1,0 +1,40 @@
+@mixin link_hover() {
+    @media(min-width: $tablet) {
+        transition: opacity $transition-rules, color $transition-rules;
+    
+        &:hover,
+        &:focus {
+            color: $col_green;
+        }
+    
+        &:active {
+            color: $col_green;
+            opacity: 0.8;
+        }
+    }
+}
+
+@mixin container() {
+    max-width: $desktop;
+    padding: 0 4.5rem;
+    margin: 0 auto;
+
+    @media(max-width: $desktop) {
+        padding: 0 3rem;
+    }
+
+    @media(max-width: $tablet_lg) {
+        max-width: $tablet_lg;
+        padding: 0 2rem;
+    }
+
+    @media(max-width: $tablet) {
+        max-width: $tablet;
+        padding: 0 1.5rem;
+    }
+
+    @media(max-width: $mobile_lg) {
+        max-width: $mobile_lg;
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,58 @@
+.cmn {
+    &__wrapper {
+        @include container();
+    }
+    
+    &__title {
+        font-family: $font_bold;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        text-align: left;
+
+        color: $col_grey;
+    }
+
+    &__text {
+        font-family: $font_reg;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+
+        color: $col_grey;
+
+        &--thin {
+            font-weight: 500;
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+        }
+
+        &--med {
+            font-family: $font_med;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            font-weight: 600;
+        }
+
+        &--bold {
+            font-family: $font_ext;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+        }
+
+        &--green {
+            color: $col_green;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        font-family: $font_bold;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        min-width: 4rem;
+        min-height: 4rem;
+        width: fit-content;
+
+        color: $col_link;
+    }
+}

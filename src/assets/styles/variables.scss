@@ -1,0 +1,34 @@
+//fonts
+
+$font_reg: 'BwModelicaCyrillicDEMO-Regular';
+$font_med: 'BwModelicaCyrillicDEMO-Medium';
+$font_bold: 'BwModelicaCyrillicDEMO-Bold';
+$font_ext: 'BwModelicaCyrillicDEMO-ExtraBold';
+
+// animation
+
+$transition_rules: 0.3s 0.1s ease;
+
+// widths
+
+$desktop: 1200px;
+$tablet_lg: 960px;
+$tablet: 768px;
+$mobile_lg: 534px;
+$mobile_md: 434px;
+$mobile: 320px;
+
+$min_width: $mobile;
+
+// colors
+
+$col_white: #ffffff;
+$col_grey: #535353;
+$col_green: #497952;
+$col_link: #fafffa;
+$col_lightpink: #f9edf0;
+
+// retina
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
