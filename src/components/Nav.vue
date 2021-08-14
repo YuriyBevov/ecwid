@@ -71,6 +71,20 @@
             @media(max-width: $tablet_md) {
                 padding: 0.3rem;
             }
+
+            opacity: 1;
+            transition: $transition-rules;
+
+            @media(min-width: $tablet) {
+                &:hover,
+                &:focus {
+                    opacity: 0.8;
+                }
+
+                &:active {
+                    opacity: 0.6;
+                }
+            }
         }
 
         &__info {
