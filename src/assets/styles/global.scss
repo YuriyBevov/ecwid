@@ -17,21 +17,17 @@
   font-size: 62.5%;
 }
 
-/*::-webkit-scrollbar {
-  width: 12px;
+::-webkit-scrollbar {
+  width: 8px;
   min-height: 8px;
-  background-color: $color-footer_bcg;
+  background-color: $col_grey;
 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $color_maroon;
+  background-color: $col_green;
   border-radius: 0.5rem;
 }
-
-::-webkit-scrollbar-corner {
-  border-radius: 1rem;
-} */
 
 html,
 body {
