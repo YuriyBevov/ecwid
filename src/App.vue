@@ -5,8 +5,6 @@
 </template>
 
 <script>
-  
-  // @ is an alias to /src
   import MainLayout from '@/layouts/MainLayout.vue'
   import { objectFitImages } from '@/assets/scripts/ofi.min.js'
   
@@ -18,8 +16,7 @@
     },
 
     mounted() {
-      var someImages = document.querySelectorAll('.js-ofi-polyfill');
-      console.log(someImages)
+      const someImages = document.querySelectorAll('.js-ofi-polyfill');
       objectFitImages(someImages);
     }
   }

@@ -1,5 +1,5 @@
 <template>
-    <div class="inner">
+    <div class="cmn_wrapper inner">
         Страница сайта для примера навигации
     </div>
 </template>
