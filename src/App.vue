@@ -8,12 +8,19 @@
   
   // @ is an alias to /src
   import MainLayout from '@/layouts/MainLayout.vue'
+  import { objectFitImages } from '@/assets/scripts/ofi.min.js'
   
   export default {
     name: 'App',
 
     components: {
       MainLayout
+    },
+
+    mounted() {
+      var someImages = document.querySelectorAll('.js-ofi-polyfill');
+      console.log(someImages)
+      objectFitImages(someImages);
     }
   }
 </script>
@@ -22,11 +29,13 @@
   @import '@/assets/styles/index.scss';
   
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
+
+    .js-ofi-polyfill {
+      object-fit: cover;
+	    font-family: 'object-fit: cover;';
+    }
   }
 
 </style>

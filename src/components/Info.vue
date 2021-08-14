@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <td class="cmn__text cmn__text--med">Сб - Вск</td>
-                        <td class="cmn__text cmn__text--med">11 - 20</td>
+                        <td class="cmn__text cmn__text--med">11 - 18</td>
                     </tr>
                 </table>
             </li>
@@ -69,7 +69,7 @@
                 margin-right: 1.5rem;
             }
 
-            @media(max-width: $tablet_lg) {
+            @media(max-width: $tablet_md) {
                 &:first-child {
                     width: 100%;
                     margin-bottom: 1.5rem;
@@ -91,12 +91,16 @@
             }
 
             &--worktime {
-                width: 10.6rem;
+                width: 10.8rem;
 
                 tr {
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+                }
+
+                td {
+                    line-height: 1.3rem;
                 }
 
             }

@@ -2,7 +2,7 @@
     <nav class="nav" :class="showNav ? 'opened' : null">
         <div class="cmn__wrapper">
             <ul class="nav__list">
-                <router-link to="#" class="cmn__link nav__link">Пряжа</router-link>
+                <router-link to="inner" class="cmn__link nav__link">Пряжа</router-link>
                 <router-link to="#" class="cmn__link nav__link">Спицы</router-link>
                 <router-link to="#" class="cmn__link nav__link">Крючки</router-link>
                 <router-link to="#" class="cmn__link nav__link">Аксессуары</router-link>
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-
     import Info from '@/components/Info.vue'
 
     export default {
@@ -59,7 +58,7 @@
         &__list {
             display: flex;
             flex-wrap: wrap;
-            max-width: 90rem;
+            max-width: 82.7rem;
             margin: 0 auto;
 
             @media(max-width: $tablet) {
@@ -68,11 +67,10 @@
         }
 
         &__link {
-            margin: 0 1rem;
+            margin: 0 0.5rem;
             padding: 1rem;
 
-            @media(max-width: $tablet_lg) {
-                margin: 0 0.5rem;
+            @media(max-width: $tablet_md) {
                 padding: 0.3rem;
             }
         }

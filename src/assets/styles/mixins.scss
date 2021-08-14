@@ -19,11 +19,11 @@
     padding: 0 4.5rem;
     margin: 0 auto;
 
-    @media(max-width: $desktop) {
+    @media(max-width: $tablet_lg) {
         padding: 0 3rem;
     }
 
-    @media(max-width: $tablet_lg) {
+    @media(max-width: $tablet_md) {
         max-width: $tablet_lg;
         padding: 0 2rem;
     }

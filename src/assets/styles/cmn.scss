@@ -27,13 +27,14 @@
 
         &--med {
             font-family: $font_med;
+            font-weight: 600;
             font-size: 1.3rem;
             line-height: 1.6rem;
-            font-weight: 600;
         }
 
         &--bold {
             font-family: $font_ext;
+            font-weight: 800;
             font-size: 1.4rem;
             line-height: 1.7rem;
         }

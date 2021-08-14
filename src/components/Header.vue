@@ -1,9 +1,10 @@
 <template>
     <header class="header">
         <div class="cmn__wrapper header__wrapper">
-            <div class="header__logo">
+            
+            <router-link to="/" class="header__logo">
                 <img src="~@/assets/images/logo.png" alt="логотип" width="90" height="70">
-            </div>
+            </router-link>
 
             <div class="header__info">
                 <Info/>
@@ -57,7 +58,7 @@
         position: sticky;
         top: 0;
         background-color: $col_white;
-        z-index: 100;
+        z-index: 10000;
 
         &__burger {
             display: none;
@@ -86,7 +87,7 @@
             display: flex;
             flex-wrap: wrap;
             padding-top: 3rem;
-            padding-bottom: 2rem;
+            padding-bottom: 1.7rem;
             position: relative;
 
             @media(max-width: $tablet) {
@@ -98,7 +99,7 @@
         &__logo {
             margin-right: 10rem;
 
-            @media(max-width: $tablet_lg) {
+            @media(max-width: $tablet_md) {
                 margin-right: 5rem;
             }
         }
@@ -107,6 +108,7 @@
             display: flex;
             flex-wrap: wrap;
             flex-grow: 1;
+            max-width: 86rem;
        }
 
         &__action {

@@ -64,13 +64,13 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
      @import '@/assets/styles/variables.scss';
 
     .features {
         padding: 3.5rem 0;
 
-        @media(max-width: $tablet_lg) {
+        @media(max-width: $tablet_md) {
             padding: 1.5rem 0;
         }
 
@@ -88,6 +88,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-around;
             width: calc(20% - 1rem);
             min-height: 15.4rem;
             margin: 0 0.5rem;
@@ -101,17 +102,9 @@
                 width: 100%;
             }
 
-            img {
-                margin-bottom: auto;
-            }
-
-            p {
-                display: flex;
-                align-items: center;
-                
-                max-width: 14rem;
+            p {               
+                max-width: 12rem;
                 padding: 0 1rem;
-                min-height: 5rem;
                 text-align: center;
             }
         }

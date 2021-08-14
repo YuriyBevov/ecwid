@@ -35,7 +35,7 @@
     .intro {
         padding: 3.5rem 0;
         
-        @media(max-width: $tablet_lg) {
+        @media(max-width: $tablet_md) {
             padding: 1.5rem 0;
         }
 
@@ -45,7 +45,7 @@
             padding: 0 7rem;
             padding-right: 6.4rem;
 
-            @media(max-width: $desktop) {
+            @media(max-width: $tablet_lg) {
                 padding: 0 3rem;
             }
 
@@ -69,7 +69,7 @@
             margin-right: auto;
             padding-right: 3rem;
 
-            @media(max-width: $tablet_lg) {
+            @media(max-width: $tablet_md) {
                 max-width: 70%;
             }
 
@@ -86,19 +86,19 @@
             }
 
             p {
+                max-width: 54.8rem;
                 text-align: left;
                 line-height: 2.4rem;
                 margin-bottom: 2rem;
             }
-
         }
         
         &__link {
             margin-top: auto;
             align-self: flex-end;
-            text-decoration-line: underline;
+            border-bottom: 1px solid $col_green;
 
-            @media(max-width: $tablet_lg) {
+            @media(max-width: $tablet_md) {
                 align-self: flex-start;
             }
 
@@ -116,21 +116,20 @@
         &__video {
             position: relative;
             flex-grow: 1;
+            width: 100%;
             max-width: 35rem;
             height: 21.3rem;
             align-self: center;
+            margin-bottom: 0.3rem;
 
             border: 1px solid $col_green;
-            background-color: $col_lightpink;
-
-            
+            background-color: $col_lightpink;          
 
             @media(max-width: $tablet) {
                 width: 100%;
             }
 
             button {
-                
                 position: absolute;
                 top: 50%;
                 left: 50%;
