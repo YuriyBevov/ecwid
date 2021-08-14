@@ -114,6 +114,7 @@
         &__action {
             display: flex;
             align-items: center;
+            margin-left: auto;
 
             a{
                 display: block;

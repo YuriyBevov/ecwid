@@ -10,6 +10,7 @@
                         v-for="(slide, i) of slideList"
                         :key="'slide_' + i"
                         :class="sliderOptions.current === i ? 'active' : null"
+                        @click="onClickShowNextSlide"
                     >
                         <img :src=slide.imgUrl :alt=slide.alt class="js-ofi-polyfill">
                     </div>
